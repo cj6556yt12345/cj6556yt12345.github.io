@@ -9,13 +9,14 @@
         .logo { max-width: 200px; height: auto; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(137, 180, 250, 0.3)); }
         h1 { color: #89b4fa; font-size: 3.2rem; margin: 0 0 10px 0; font-weight: 800; letter-spacing: 2px; }
         p { color: #a6adc8; font-size: 1.3rem; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6; }
-        .btn { display: inline-block; background-color: #f5c2e7; color: #11111b; padding: 16px 35px; font-weight: bold; border-radius: 30px; text-decoration: none; font-size: 1.1rem; transition: 0.2s ease-in-out; box-shadow: 0 4px 15px rgba(245, 194, 231, 0.4); }
+        .btn { display: inline-block; background-color: #f5c2e7; color: #11111b; padding: 16px 35px; font-weight: bold; border-radius: 30px; text-decoration: none; font-size: 1.1rem; transition: 0.2s ease-in-out; box-shadow: 0 4px 15px rgba(245, 194, 231, 0.4); margin-bottom: 20px; }
         .btn:hover { background-color: #89b4fa; box-shadow: 0 4px 15px rgba(137, 180, 250, 0.4); transform: translateY(-2px); }
-        .features { max-width: 650px; margin: 50px auto; text-align: left; background: #252538; padding: 30px; border-radius: 16px; border: 1px solid #414256; }
+        .section-container { max-width: 650px; margin: 30px auto; text-align: left; background: #252538; padding: 30px; border-radius: 16px; border: 1px solid #414256; }
         h3 { color: #f5c2e7; margin-top: 0; font-size: 1.5rem; border-bottom: 2px solid #313244; padding-bottom: 10px; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 15px 0; padding-left: 30px; position: relative; font-size: 1.1rem; }
-        li::before { content: "⚡"; position: absolute; left: 0; color: #89b4fa; }
+        ul, ol { padding-left: 20px; font-size: 1.1rem; line-height: 1.8; }
+        li { margin: 10px 0; color: #cdd6f4; }
+        strong { color: #89b4fa; }
+        .hash-box { font-family: 'Courier New', Courier, monospace; background-color: #11111b; padding: 15px; border-radius: 8px; font-size: 0.95rem; word-break: break-all; border: 1px solid #313244; color: #a6adc8; }
     </style>
 </head>
 <body>
@@ -27,15 +28,41 @@
     
     <a href="#" class="btn">Download ArchX Live ISO</a>
 
-    <div class="features">
-        <h3> Out-of-the-Box Features</h3>
+    <div class="section-container">
+        <h3>Out-of-the-Box Features</h3>
         <ul>
             <li><strong>Optimized Kernel:</strong> Tuned for maximum stability and daily driving.</li>
-            <li><strong>Gaming & Media Ready:</strong> Steam, Discord, VLC Player, and GIMP come pre-installed.</li>
+            <li><strong>Gaming and Media Ready:</strong> Steam, Discord, VLC Player, and GIMP come pre-installed.</li>
             <li><strong>Modern Audio Stack:</strong> Advanced sound handling driven by modern Pipewire and Wireplumber architectures.</li>
             <li><strong>Developer Friendly:</strong> Python 3 environment and pip manager ready instantly.</li>
             <li><strong>Clean Custom Visuals:</strong> Gorgeous dark interface themed matching your hardware styling rules.</li>
         </ul>
+    </div>
+
+    <div class="section-container">
+        <h3>System Requirements</h3>
+        <ul>
+            <li><strong>Processor:</strong> 64-bit dual-core CPU or better</li>
+            <li><strong>Memory:</strong> 2 GB of RAM minimum (4 GB recommended)</li>
+            <li><strong>Storage:</strong> 15 GB of free hard drive space</li>
+            <li><strong>Graphics:</strong> Intel, AMD, or NVIDIA graphics card</li>
+        </ul>
+    </div>
+
+    <div class="section-container">
+        <h3>Installation Instructions</h3>
+        <ol>
+            <li>Download the official ArchX ISO file using the button above.</li>
+            <li>Flash the file to a USB flash drive using a tool like Rufus (DD Image mode is recommended).</li>
+            <li>Power off your target computer, insert the USB drive, and boot using your system boot menu key (F12, F11, or F8).</li>
+            <li>Select the live boot installer environment from the screen menu.</li>
+        </ol>
+    </div>
+
+    <div class="section-container">
+        <h3>SHA-256 Checksum</h3>
+        <p>Verify your download matches the official system build signature below:</p>
+        <div class="hash-box">05C47B5DE4448F5E1FB5A90FC99EF87BBC9F03A6C2C35A212E1D62243A144F1ED</div>
     </div>
 
 </body>
